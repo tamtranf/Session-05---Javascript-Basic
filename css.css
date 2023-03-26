@@ -1,0 +1,342 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+:root{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+*{box-sizing: border-box;}
+
+.container{
+    padding: 15px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+[class*='col']{
+    padding: 0 15px;
+}
+.col_30{
+    width: 30%;
+}
+.col_70{
+    width: 70%;
+    
+}
+.col_20{
+    width: 20%;
+}
+.col_40{
+    width: 40%;
+}
+.col_75{
+    width: 75%;
+}
+.col_25{
+    width: 25%;
+    margin-bottom: 20px;
+}
+.col_80{
+    width: 80%;
+}
+.col_90{
+    width: 90%;
+}
+.col_10{
+width: 10%;
+}
+.menu_ngang {
+    display: flex;
+    
+    
+}
+.end{
+    justify-content: flex-end;
+}
+
+
+.menu_ngang li{
+    position: relative;
+    
+}
+.menu_ngang_con{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.menu_ngang li:hover>.menu_ngang_con{
+    display: block;
+}
+.menu_ngang li a{
+    text-decoration: none;
+    padding: 0 15px;
+    color: white;
+   
+    
+}
+
+.search p{
+    color: white;
+}
+.menu_ngang li{
+    color: white;
+}
+.heart{
+    color: white;
+}
+header{
+    background-color: #0e7346;
+    margin-bottom: 30px;
+}
+.login{
+    margin-bottom: 20px;
+}
+.logo{
+    margin-bottom: 30px;
+}
+.menu_ngang_con li {
+    padding: 0 15px;
+    width: 100%;
+}
+.logo_img img{
+    width: 180px;
+    padding: 0 15px;
+}
+.logo{
+    border-top: 0.01px solid white;
+    border-bottom:0.01px solid white ;
+    padding: 15px 0;
+}
+.search_bar input{
+    width: 90%;
+    height: 32px;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.btn{
+    height: 32px;
+    background-color: #80bb01;
+    border: none;
+    color: white;
+    margin-left: -5px;
+    
+    
+}
+.service ul li{
+    padding: 0 10px;
+}
+.service ul li a {
+    background-color:#138552;
+    display: block;
+    padding: 10px 10px ;
+    text-align: center;
+    line-height: 20px;
+    font-size: 10px;
+}
+.heart{
+    text-align: right;
+}
+.banner img{
+    width: 100%;
+   
+}
+.sort_bar{
+    padding: 5px;
+    border: 0.01px solid gray;
+    margin-bottom: 20px;
+    
+}
+select{
+    width: 60%;
+}
+
+.food_img img{
+    width: 100%;
+    
+}
+.food{
+    border: 0.01px solid gray;
+    padding-bottom: 10px;
+    position: relative;
+    border-radius: 5px;
+}
+.food_title h2{
+    color: #80bb01;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.food_title h2 span{
+    font-size: 10px;
+    color: black;
+    text-decoration: line-through;
+}
+.food_title{
+    text-align: center;
+}
+.sale{
+    background-color: red;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.love{
+    position: absolute;
+    top: 10px ;
+    right: 10px;
+}
+.banner{
+    margin-bottom: 15px ;
+}
+.menu_doc li a{
+
+    text-decoration: none;
+    
+}
+.menu_doc li{
+    position: relative;
+}
+.menu_doc_con{
+    /* display: none; */
+    /* position: absolute;
+    left: 0%;
+    top: 0%; */
+
+}
+.menu_doc li:hover>.menu_doc_con{
+    display: block;
+}
+.aside{
+    background-color:rgb(236, 230, 230);
+    padding: 10px;
+    font-size: 15px;
+    line-height: 28px;
+    
+
+}
+.aside h3{
+    font-size: 17px;
+    font-weight: bold;
+}
+.Product_categories ul li a{
+    color: black;
+    
+}
+.Product_categories{
+    border-bottom: gray 1px solid;
+    padding: 10px 0;
+}
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    
+}
+.good{
+    border: 1px gray solid;
+    padding: 4px 8px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+footer{
+    background-color:#2f2f2f;
+    color: white;
+    font-size: 15px;
+    padding: 15px 0;
+    line-height: 30px;
+}
+.phone{
+    display: flex;
+    align-items: center;
+}
+.footer1{
+    border-bottom: white 1px solid;
+    margin-bottom: 15px;
+    padding: 50px 0;
+}
+.copyright{
+    background-color: #0e7346;
+    color: white;
+    padding: 20px;
+    
+    
+
+}
+.col_35{
+    width: 35%;
+}
+.col_15{
+    width: 15%;
+}
+.joinour{
+    padding: 15px 0 0 0 ;
+}
+.news h2{
+    color: #80bb01;
+    font-size: 18px;
+}
+.email input{
+    width: 340px;
+    height: 32px;
+}
+.visa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+
